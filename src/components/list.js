@@ -12,7 +12,6 @@ export default function List({ items = [], parentStyle, childStyle }) {
         ...parentStyle,
       }}
     >
-      {console.log('items', items)}
       {items.map((item, i) => (
         <Flex
           className={item.isAvailable ? 'open' : 'closed'}
